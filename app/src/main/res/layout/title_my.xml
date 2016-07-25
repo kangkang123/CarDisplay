@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#f4f4f4">
+
+    <ImageView
+        android:id="@+id/iv_price_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:clickable="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="20dp"
+        android:src="@drawable/select"
+    />
+
+    <TextView
+        android:id="@+id/tv_my_news_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="橙信二手车"
+        android:textColor="#333333"
+        android:visibility="invisible"
+        android:textSize="18sp"/>
+
+    <ImageView
+        android:id="@+id/iv_my_news_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/tv_title_city_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_my_news_title"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/iv_my_news_title"
+        android:clickable="true"
+        android:drawablePadding="6dp"
+        android:drawableRight="@drawable/downarrow"
+        android:paddingLeft="4dp"
+        android:text="全国"
+        android:textColor="#666"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/iv_my_line"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_alignParentBottom="true"
+        android:background="#d4d4d4"/>
+
+    <TextView
+        android:id="@+id/tv_my_title_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:paddingRight="8dp"
+        android:text="登录"
+        android:textColor="#ed6c01"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/iv_my_title_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="20dp"
+        android:src="@drawable/fresh"
+    />
+
+</RelativeLayout>

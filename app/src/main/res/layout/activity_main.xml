@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/dl_screen"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+        <cn.longchou.cardisplay.view.PullToRefreshView
+            android:id="@+id/main_pull_refresh_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include
+                android:id="@+id/title"
+                layout="@layout/title_my"/>
+
+            <GridView
+                android:id="@+id/gv_car_display"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#d2d2d2"
+                android:horizontalSpacing="1px"
+                android:numColumns="3"
+                android:verticalSpacing="1px"
+            >
+            </GridView>
+
+
+        </cn.longchou.cardisplay.view.PullToRefreshView>
+        <ImageView
+            android:id="@+id/iv_car_list_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="32dp"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/up"
+        />
+
+    </RelativeLayout>
+
+
+    <!--<FrameLayout-->
+    <!--android:id="@+id/fl_screen"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:layout_gravity="left"/>-->
+    <LinearLayout android:layout_width="300dp"
+                  android:layout_height="match_parent"
+                  android:layout_gravity="left"
+                  android:background="#fff"
+                  android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_screen_choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:gravity="center_horizontal"
+            android:text="城市"
+            android:textColor="#666"
+            android:textSize="16sp"/>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="2px"
+              android:layout_marginBottom="20dp"
+              android:layout_marginLeft="32dp"
+              android:layout_marginRight="32dp"
+              android:layout_marginTop="20dp"
+              android:background="#d6d6d6"
+        />
+
+        <ListView
+            android:id="@+id/lv_city_choose"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#00000000"
+            android:dividerHeight="0dp">
+        </ListView>
+    </LinearLayout>
+
+
+</android.support.v4.widget.DrawerLayout>
